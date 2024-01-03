@@ -1,6 +1,5 @@
-import React from 'react'
-
 const FotoAmpliada = ({foto, setFotoAmpli}) => {
+  
   return (
 
     <div className='foto_ampli' onClick={() => setFotoAmpli(null)}>
