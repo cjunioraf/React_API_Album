@@ -48,7 +48,7 @@ function App() {
       fetchData({query, categoria});
       setActiveSearch(false);
     }
-
+    
   }, [activeSearch])
 
 
@@ -56,9 +56,7 @@ function App() {
     <div className='container'>
       <Searchbar setQuery={setQuery} setCategoria={setCategoria} setActiveSearch={setActiveSearch}/>  
       <FotoList fotos={fotos} setFotoAmpli={setFotoAmpli} />
-      {fotoAmpli && 
-        <FotoAmpliada foto={fotoAmpli} setFotoAmpli={setFotoAmpli} />
-      }      
+      {fotoAmpli && <FotoAmpliada foto={fotoAmpli} setFotoAmpli={setFotoAmpli} />}      
     </div>
   )
 }
